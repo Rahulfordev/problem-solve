@@ -9,3 +9,11 @@ console.log(obj["rahul ali"]);
 
 let thikana = "address";
 console.log(obj[thikana]);
+
+//
+obj["vallage"] = "lalpur";
+console.log(obj);
+
+//
+obj["vallage add"] = "gopulpur";
+console.log(obj["vallage add"]);
