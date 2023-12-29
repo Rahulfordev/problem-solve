@@ -89,3 +89,26 @@ thisIndecateTwo.anotherObj.value.call(thisIndecateTwo);
 //1.গ্লোবালি যেকোনো জায়গায়, কাস্টমভাবে তৈরীকৃত অবজেক্ট এর ভিতরে ছাড়া this সবসময় গ্লোবাল অবজেক্টকেই ইন্ডিকেট করবে।
 //2.এটা নরমাল রেগুলার ফাংশন কলেও গ্লোবাল অবজেক্ট কে পয়েন্ট করে
 //3.এটার ভ্যালু অ্যাসাইন হয় না যতক্ষন না পর্যন্ত আপনি ডিক্ল্যেয়ারকৃত ফাংশনটাকে কল না করছেন বা এটা যেখানে ইউজ করা হয়েছে সেটাকে কল না করছেন।
+
+
+// ***** Udemy
+// 1.
+const rahul = {
+  year: 2004,
+  calcAge: function () {
+    console.log(this); // full object dekhabe
+    console.log(2024 - this.year); // 20
+  },
+};
+rahul.calcAge();
+
+const sumon = {
+  year: 2003,
+};
+
+sumon.calcAge = rahul.calcAge;
+sumon.calcAge(); // 21
+
+const f = rahul.calcAge;
+f(); //undefiend
+
