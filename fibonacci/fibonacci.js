@@ -6,6 +6,9 @@
  * 4= [4-1] + [4-2]
  *
  */
+/**2,3,4,5,6,7,8,9,10
+ * 0,1,1,2,3,5,8,13,21,34,55
+ */
 // let fibo = [0, 1];
 // for (let i = 2; i <= 10; i++) {
 //   fibo[i] = fibo[i - 1] + fibo[i - 2];
@@ -28,19 +31,19 @@
 // console.log(result);
 
 //  ***** fibonacci ceries recursive way
-function fibonacci(n) {
-  if (n == 0) {
-    return 0;
-  }
-  if (n == 1) {
-    return [0, 1];
-  } else {
-    let fibo = fibonacci(n - 1); // 0,1
-    let nextElerntg = fibo[n - 1] + fibo[n - 2];
-    fibo.push(nextElerntg);
-    return fibo;
-  }
-}
+// function fibonacci(n) {
+//   if (n == 0) {
+//     return 0;
+//   }
+//   if (n == 1) {
+//     return [0, 1];
+//   } else {
+//     let fibo = fibonacci(n - 1); // 0,1
+//     let nextElerntg = fibo[n - 1] + fibo[n - 2];
+//     fibo.push(nextElerntg);
+//     return fibo;
+//   }
+// }
 
-const result = fibonacci(10);
-console.log(result);
+// const result = fibonacci(10);
+// console.log(result);

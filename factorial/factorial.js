@@ -13,7 +13,6 @@
 //     console.log(i, fac);
 //   }
 // }
-
 // console.log(factorial(10));
 
 // **** factorial using while
@@ -36,13 +35,14 @@
  * 5! = (5-1) * 5
  * n! = n* (n - 1)!
  */
-function factorial(n) {
-  if (n === 0) {
-    return 1;
-  } else {
-    return (n = n * factorial(n - 1));
-  }
-}
 
-const result = factorial(10);
-console.log(result);
+// function factorial(n) {
+//   if (n === 0) {
+//     return 1;
+//   } else {
+//     return (n = n * factorial(n - 1));
+//   }
+// }
+
+// const result = factorial(10);
+// console.log(result);
