@@ -1,4 +1,5 @@
 /* ====  way 1 ==== */
+// ** setTimeout na thakleo same answer asbe
 
 // const takeOrder = (customer, cb) => {
 //   console.log(`Take order for ${customer}`);
@@ -65,11 +66,11 @@
 //   .then((res) => processOrder(res))
 //   .then((res) => completeOrder(res));
 
-/* ====  way 2 ==== */
-for (var i = 0; i < 6; i++) {
-  setTimeout(() => {
-    console.log(i);
-  }, i * 100);
-}
+/* ==== */
+// for (var i = 0; i < 6; i++) {
+//   setTimeout(() => {
+//     console.log(i);
+//   }, i * 100);
+// }
 
-console.log(i);
+// console.log(i);

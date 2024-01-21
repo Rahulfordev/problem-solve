@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.flex-item-left {
+  background-color: red;
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  background-color: green;
+  padding: 10px;
+  flex: 50%;
+}
+
+@media (max-width: 800px) {
+  .flex-item-left,
+  .flex-item-right {
+    flex: 100%;
+  }
+}
