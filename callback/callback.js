@@ -33,38 +33,38 @@
 // });
 
 /* ====  way 2 ==== */
-// const takeOrder = (customer) => {
-//   console.log(`Take order for ${customer}`);
-//   return new Promise((resolve, reject) => {
-//     resolve(customer);
-//   });
-// };
+const takeOrder = (customer) => {
+  console.log(`Take order for ${customer}`);
+  return new Promise((resolve, reject) => {
+    resolve(customer);
+  });
+};
 
-// const arrangItem = (customer) => {
-//   console.log(`Arrange item for ${customer}`);
-//   return new Promise((resolve, reject) => {
-//     resolve(customer);
-//   });
-// };
+const arrangItem = (customer) => {
+  console.log(`Arrange item for ${customer}`);
+  return new Promise((resolve, reject) => {
+    resolve(customer);
+  });
+};
 
-// const processOrder = (customer) => {
-//   console.log(`Process Order for ${customer}`);
-//   return new Promise((resolve, reject) => {
-//     resolve(customer);
-//   });
-// };
+const processOrder = (customer) => {
+  console.log(`Process Order for ${customer}`);
+  return new Promise((resolve, reject) => {
+    resolve(customer);
+  });
+};
 
-// const completeOrder = (customer) => {
-//   console.log(`Complete Order for ${customer}`);
-//   return new Promise((resolve, reject) => {
-//     resolve(customer);
-//   });
-// };
+const completeOrder = (customer) => {
+  console.log(`Complete Order for ${customer}`);
+  return new Promise((resolve, reject) => {
+    resolve(customer);
+  });
+};
 
-// takeOrder("Rahul Ali")
-//   .then((res) => arrangItem(res))
-//   .then((res) => processOrder(res))
-//   .then((res) => completeOrder(res));
+takeOrder("Rahul Ali")
+  .then((res) => arrangItem(res))
+  .then((res) => processOrder(res))
+  .then((res) => completeOrder(res));
 
 /* ==== */
 // for (var i = 0; i < 6; i++) {
