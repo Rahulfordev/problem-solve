@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calc Example</title>
+  </head>
+  <body>
+    <ul id="list">
+      <li>Javascript</li>
+      <li>React.JS</li>
+      <li>Next.JS</li>
+    </ul>
+    <button onclick="addNew()">Add New</button>
+    <script>
+      const list = document.getElementById("list");
+
+      list.addEventListener("click", (e) => {
+        if (e.target.matches("li")) {
+          if (e.target.innerText === "Next.JS") {
+            e.target.style.backgroundColor = "red";
+          } else {
+            e.target.style.backgroundColor = "green";
+          }
+        }
+      });
+
+      function addNew() {
+        const li = document.createElement("li");
+        li.innerText = "Node.JS";
+        list.appendChild(li);
+      }
+    </script>
+  </body>
+</html>
